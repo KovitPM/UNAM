@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Responsiva con Modelos 3D</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="Metaversos">
+    <div class="container">
+
+        <header class="header">
+            <nav>
+                <div class="navbar-container">
+                    <div class="IMG"><img src="https://francia.unam.mx/wp-content/uploads/2021/10/cropped-Logo-UNAM-Dorado-Square.png" alt="LogoUNAM" style="position: left; left: 0; top: 1%; transform: translateY(-1%); width: 100%; height: auto; filter: drop-shadow(0 0 10px rgba(148, 112, 15, 0.8))"></div>
+                    <input type="checkbox" id="menu-toggle">
+                    <label for="menu-toggle" class="hamburger">&#9776;</label>
+                    <ul class="nav-menu">
+                        <li><a href="index.html" class="nav-link">Modelos 3D</a></li>
+                        <li><a href="#" class="nav-link">Metaversos</a></li>
+                        <li><a href="#" class="nav-link">Recorridos VR</a></li>
+                        <li><a href="#" class="nav-link">Material Geología</a></li>
+                    </ul>
+                    <div class="IMG"><img src="https://www.ingenieria.unam.mx/nuestra_facultad/images/institucionales/escudo_fi_color.png" alt="LogoUNAM" style="position: left; left: 0; top: 1%; transform: translateY(-1%); width: 87%; height: auto; filter: drop-shadow(0 0 10px rgba(58, 57, 57, 0.8))"></div>
+                </div>
+            </nav>            
+        </header>
+
+
+        <main class="main">
+                <div class="slider">
+                    <button id="next">></button>
+                    <button id="prev"><</button>
+                    <div class="item" id="tour-1">
+                        <img src="Imuseos/MuseoVirtual.png" alt="Recorrido Virtual 1">
+                        <div class="play-button"></div>
+                    </div>
+            
+                    <!-- Segundo recorrido -->
+                    <div class="item" id="tour-2">
+                        <img src="Imuseos/FosilesYRocas.png" alt="Recorrido Virtual 2">
+                        <div class="play-button"></div>
+                    </div>
+            
+                    <!-- Tercer recorrido -->
+                    <div class="item" id="tour-3">
+                        <img src="Imuseos/TiposDePlayas.png" alt="Recorrido Virtual 3">
+                        <div class="play-button"></div>
+                </div>
+
+        </main>
+
+
+        <footer class="footer">
+            <p>Pie de página</p>
+        </footer>
+
+    </div>
+
+    <script src="app.js"></script>
+
+    <script>
+        // Función que reemplaza la miniatura con el iframe de Spatial.io
+        function loadTour(tourId, videoUrl) {
+            const thumbnail = document.getElementById(tourId);
+            const iframe = document.createElement('iframe');
+            iframe.setAttribute('src', videoUrl);
+            iframe.setAttribute('frameborder', '0');
+            iframe.setAttribute('allowfullscreen', '1');
+            iframe.setAttribute('allow', 'camera; microphone; vr; autoplay; encrypted-media');
+
+            // Reemplaza la miniatura por el iframe del recorrido virtual
+            thumbnail.innerHTML = '';
+            thumbnail.appendChild(iframe);
+        }
+
+        // Asignar a cada recorrido su evento
+        document.getElementById('tour-1').addEventListener('click', function() {
+            loadTour('tour-1', 'https://www.spatial.io/s/Museo-Virtual-NFT-S-64140a598bc75c0092ed8e6c?share=9134280149735596951');
+        });
+
+        document.getElementById('tour-2').addEventListener('click', function() {
+            loadTour('tour-2', 'https://www.spatial.io/s/Fosiles-y-Rocas-en-Tehuacan-Puebla-65539c2c9992afc7f637daa1?share=6024293526782303365');
+        });
+
+        document.getElementById('tour-3').addEventListener('click', function() {
+            loadTour('tour-3', 'https://www.spatial.io/s/Tipos-de-Playas-659342f31866c8255e3814f9?share=2125095012973554901');
+        });
+    </script>
+
+</body>
+</html>
