@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Declaración de la codificación y el tipo de documento -->
+    <meta charset="UTF-8">
+    <!-- Para asegurar que la página sea responsiva en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página que aparecerá en la pestaña del navegador -->
+    <title>Metaversos</title>
+    <!-- Enlace a la hoja de estilos externa "styles-meta.css" -->
+    <link rel="stylesheet" href="Estilos/styles-meta.css">
+    <link rel="icon" href="Imagenes/escudo.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="buttons">
+            <a href="https://www.ingenieria.unam.mx" target="_blank"> <!-- Enlace a la página de la Facultad de Ingeniería. -->
+                <img src="https://www.ingenieria.unam.mx/images/logos/logo_2.png" 
+                     alt="LogoUNAM" 
+                     style="position: left; left: 0; top: 1%; transform: translateY(-1%); width: 220px; height: auto; filter: drop-shadow(0 0 2px rgba(228, 76, 76, 0.5));">
+                <!-- Imagen del escudo de la Facultad de Ingeniería con estilos personalizados. -->
+            </a>
+            <button class="nav-button" data-section="section1">Introducción</button>
+            <button class="nav-button" data-section="section2">Geología General</button>
+            <button class="nav-button" data-section="section3">Mineralogía</button>
+            <button class="nav-button" data-section="section4">Petrología</button>
+            <button class="nav-button" data-section="section5">Geología Marina</button>
+            <a href="index.html" style="color: rgb(220,10,49); text-decoration: none; margin-right: 10px;">VOLVER AL INICIO</a>
+            
+        </div>
+        <div class="content">
+
+            <section id="section1">
+                <h2>CONOCE NUESTRAS AULAS VIRTUALES</h2>
+                <div class="card">
+                    <div class="words">
+                        <img class="word" src="Imagenes/Virtual1.png" alt="Image 1">
+                        <img class="word" src="Imagenes/Virtual2.png" alt="Image 2">
+                        <img class="word" src="Imagenes/Virtual3.png" alt="Image 3">
+                        <img class="word" src="Imagenes/Virtual4.png" alt="Image 4">
+                        <img class="word" src="Imagenes/Virtual5.png" alt="Image 5">
+                        <img class="word" src="Imagenes/Virtual1.png" alt="Image 1"> 
+                    </div>
+                </div>                  
+            </section>
+
+            <section id="section2">
+                <p>Has click en la imagen para iniciar el recorrido</p>
+                <div class="item" id="tour-1">
+                    <img src="Imagenes/Virtual1.png" alt="Recorrido Virtual 1">
+                    <div class="play-button"></div>
+                </div>
+                <p>CONSULTA Y DESCARGA EL EBOOK DE LA PRÁCTICA DE CAMPO</p>
+                <a href="https://publuu.com/flip-book/776226/1719736/page/1" class="show-publuu-viewer" style="width: auto; height: 240px; position: relative; display: inline-block;">
+                    <img src="https://p6aqvvqp5i.execute-api.us-east-2.amazonaws.com/images/cover/776226/1719736" style="height: 100%;">
+                </a>
+                <script src="https://cms1.publuu.com/js/embed-viewer.js"></script>                
+            </section>
+
+            <section id="section3">
+                <p>Has click en la imagen para iniciar el recorrido</p>
+                <div class="item" id="tour-2">
+                    <img src="Imagenes/Virtual2.png" alt="Recorrido Virtual 1">
+                    <div class="play-button"></div>
+                </div>
+            </section>
+
+            <section id="section4">
+                <p>Has click en la imagen para iniciar el recorrido</p>
+                <div class="item" id="tour-3">
+                    <img src="Imagenes/Virtual3.png" alt="Recorrido Virtual 1">
+                    <div class="play-button"></div>
+                </div>
+            </section>
+
+            <section id="section5">
+                <p>Has click en la imagen para iniciar el recorrido</p>
+                <div class="item" id="tour-4">
+                    <img src="Imagenes/Virtual4.png" alt="Recorrido Virtual 1">
+                    <div class="play-button"></div>
+                </div>
+                <p>Has click en la imagen para iniciar el recorrido</p>
+                <div class="item" id="tour-5">
+                    <img src="Imagenes/Virtual5.png" alt="Recorrido Virtual 1">
+                    <div class="play-button"></div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <!-- Texto del copyright -->
+        <p>© 2024 UNAM - Facultad de Ingeniería. Todos los derechos reservados.</p>
+        <!-- Enlaces a redes sociales con estilo y separación entre cada uno -->
+        <div class="social-media" style="margin-top: 10px;">
+            <a href="https://www.facebook.com/UNAM.MX.Oficial/" target="_blank" aria-label="Facebook UNAM" style="color: rgb(220,10,49); text-decoration: none; margin-right: 10px;">Facebook</a>
+            <a href="https://twitter.com/UNAM_MX" target="_blank" aria-label="Twitter UNAM" style="color: rgb(220,10,49); text-decoration: none; margin-right: 10px;">Twitter</a>
+            <a href="https://www.instagram.com/unam_mx/" target="_blank" aria-label="Instagram UNAM" style="color: rgb(220,10,49); text-decoration: none; margin-right: 10px;">Instagram</a>
+            <a href="https://www.youtube.com/user/unam" target="_blank" aria-label="YouTube UNAM" style="color: rgb(220,10,49); text-decoration: none;">YouTube</a>
+        </div>  
+    </footer>
+    <script src="meta.js"></script>
+
+
+    <script>
+        // Función que reemplaza la miniatura con el iframe de Spatial.io para visualizar los recorridos
+        function loadTour(tourId, videoUrl) {
+            const thumbnail = document.getElementById(tourId); // Obtiene el elemento de la miniatura
+            const iframe = document.createElement('iframe'); // Crea un iframe
+            iframe.setAttribute('src', videoUrl); // Establece la URL del recorrido en el iframe
+            iframe.setAttribute('frameborder', '0'); // Elimina el borde del iframe
+            iframe.setAttribute('allowfullscreen', '1'); // Permite la pantalla completa
+            iframe.setAttribute('allow', 'camera; microphone; vr; autoplay; encrypted-media'); // Permisos del iframe
+
+            // Reemplaza la miniatura por el iframe del recorrido virtual
+            thumbnail.innerHTML = ''; // Limpia el contenido de la miniatura
+            thumbnail.appendChild(iframe); // Inserta el iframe en su lugar
+        }
+
+        // Asignar a cada recorrido su evento para cargar el iframe correspondiente al hacer clic
+        document.getElementById('tour-1').addEventListener('click', function() {
+            loadTour('tour-1', 'https://www.spatial.io/s/Fosiles-y-Rocas-en-Tehuacan-Puebla-65539c2c9992afc7f637daa1?share=6024293526782303365');
+        });
+
+        document.getElementById('tour-2').addEventListener('click', function() {
+            loadTour('tour-2', 'https://www.spatial.io/s/Museo-66f9f50bc49a36d6cb2cf9f9?share=135306810021644784');
+        });
+
+        document.getElementById('tour-3').addEventListener('click', function() {
+            loadTour('tour-3', 'https://www.spatial.io/s/MUSEO-DE-VOLCALES-Y-MINERALES-671ab26669d6436e7c0c19d3?share=2119413898395286824');
+        });
+
+        document.getElementById('tour-4').addEventListener('click', function() {
+            loadTour('tour-4', 'https://www.spatial.io/s/Tipos-de-Playas-659342f31866c8255e3814f9?share=2125095012973554901');
+        });
+
+        document.getElementById('tour-5').addEventListener('click', function() {
+            loadTour('tour-5', 'https://www.spatial.io/s/Guion-de-Campo-Peninsula-de-Baja-California-Sur-66fc4632fc0f430ec9778193?share=6126420002531693144');
+        });
+    </script>
+
+
+</body>
+</html>

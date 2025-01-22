@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!-- Define el conjunto de caracteres para la página en UTF-8, lo que permite soportar la mayoría de los caracteres internacionales. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Asegura que la página sea responsiva al establecer un ancho de visualización igual al ancho del dispositivo. -->
+    <title>Inicio</title> <!-- Título de la página que se muestra en la pestaña del navegador. -->
+    <link rel="stylesheet" href="Estilos/styles-index.css"> <!-- Vincula una hoja de estilos CSS externa para el diseño de la página. -->
+    <link rel="icon" href="Imagenes/escudo.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container"> <!-- Contenedor principal de la página. -->
+        <header class="header"> <!-- Sección del encabezado de la página, que incluye la navegación. -->
+            <nav>
+                <div class="navbar-container"> <!-- Contenedor de la barra de navegación. -->
+
+                    <!-- logo: Facultad de Ingeniería -->
+                    <div class="IMG">
+                        <a href="https://www.ingenieria.unam.mx" target="_blank"> <!-- Enlace a la página de la Facultad de Ingeniería. -->
+                          <img src="https://www.ingenieria.unam.mx/nuestra_facultad/images/institucionales/escudo_fi_color.png" 
+                               alt="LogoUNAM" 
+                               style="position: left; left: 0; top: 1%; transform: translateY(-1%); width: 85%; height: auto; filter: drop-shadow(0 0 2px rgba(228, 76, 76, 0.5));">
+                          <!-- Imagen del escudo de la Facultad de Ingeniería con estilos personalizados. -->
+                        </a>
+                    </div>
+                    
+                    <!-- Menú de navegación (Hamburguesa en dispositivos móviles) -->
+                    <input type="checkbox" id="menu-toggle"> <!-- Control para mostrar/ocultar el menú de navegación en dispositivos pequeños. -->
+                    <label for="menu-toggle" class="hamburger">&#9776;</label> <!-- Icono de menú (hamburguesa) que aparece en móviles. -->
+
+                    <!-- Lista de enlaces de navegación -->
+                    <ul class="nav-menu">
+                        <li><a href="Metaversos.html" class="nav-link">Metaversos</a></li> <!-- Enlace a la página de metaversos. -->
+                        <li><a href="Modelos3D.html" class="nav-link">Modelos 3D Rocas</a></li> <!-- Enlace a la página de modelos 3D de Rocas. -->
+                        <li><a href="Marinos.html" class="nav-link">Modelos 3D Marinos</a></li> <!-- Enlace a la página de modelos 3D de marinos. -->
+                        <li><a href="https://ingenieria-unam.netlify.app/" class="nav-link">Recorridos VR</a></li> <!-- Enlace a recorridos de realidad virtual. -->
+                        <li><a href="https://www.ingenieria.unam.mx/geologia3D/" class="nav-link">Material Geología</a></li> <!-- Enlace al material de geología. -->
+                    </ul>
+
+                    <!-- logo: UNAM -->
+                    <div class="IMG">
+                        <a href="https://www.unam.mx" target="_blank"> <!-- Enlace que redirecciona a la página de la UNAM. -->
+                          <img src="https://cdn.freelogovectors.net/wp-content/uploads/2020/01/UNAM_Universidad_Nacional_Autonoma_de_Mexico_Logo.png" 
+                               alt="LogoUNAM" 
+                               style="position: left; left: 0; top: 1%; transform: translateY(-1%); width: 105%; height: auto; filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));">
+                          <!-- Imagen del logo de la UNAM con estilo personalizado que incluye sombra y posicionamiento. -->
+                        </a>
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+        <main class="main"> <!-- Sección principal de contenido. -->
+            <h1>¿Qué es la Ingeniería Geológica?</h1>
+            <p>La Ingeniería Geológica es una disciplina que combina los principios de la geología con la ingeniería para resolver problemas relacionados con la Tierra y sus recursos. Los ingenieros geólogos aplican su conocimiento de las ciencias de la Tierra para:</p>
+            <ul style="list-style-position: inside; text-align: left; max-width: 600px;">
+                <li>Evaluar y mitigar riesgos geológicos como terremotos, deslizamientos de tierra y erupciones volcánicas.</li>
+                <li>Explorar y extraer recursos naturales como petróleo, gas, minerales y agua subterránea.</li>
+                <li>Diseñar y supervisar proyectos de construcción, incluyendo túneles, presas y cimientos de edificios.</li>
+                <li>Estudiar el impacto ambiental de las actividades humanas y desarrollar soluciones sostenibles.</li>
+                <li>Investigar la historia de la Tierra y los procesos que la han moldeado a lo largo del tiempo.</li>
+            </ul>
+            <p>En la UNAM, nuestro programa de Ingeniería Geológica prepara a los estudiantes con una sólida base teórica y práctica, utilizando tecnologías avanzadas como modelado 3D, realidad virtual y sistemas de información geográfica para formar profesionales capaces de enfrentar los desafíos geológicos del siglo XXI.</p>
+
+            <!-- Imagen de ingeniería con sombra. -->
+            <div class="IMG" style="display: flex; justify-content: center; margin-top: 20px;">
+                <img src="index.png" 
+                     alt="INGENIERIA" 
+                     style="width: 300%; height: auto; filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.271));"> <!-- Imagen de "index.png" centrada y con sombra. -->
+            </div>
+
+        </main>
+
+        <footer class="footer"> <!-- Sección de pie de página. -->
+            <p>© 2024 UNAM - Facultad de Ingeniería. Todos los derechos reservados.</p> <!-- Texto del copyright. -->
+            <div class="social-media" style="margin-top: 10px;"> <!-- Sección de redes sociales. -->
+                <a href="https://www.facebook.com/UNAM.MX.Oficial/" target="_blank" aria-label="Facebook UNAM" style="color: rgb(220,10,49); text-decoration: none; margin-right: 10px;">Facebook</a> <!-- Enlace a la página de Facebook de la UNAM. -->
+                <a href="https://twitter.com/UNAM_MX" target="_blank" aria-label="Twitter UNAM" style="color: rgb(220,10,49); text-decoration: none; margin-right: 10px;">Twitter</a> <!-- Enlace a la página de Twitter de la UNAM. -->
+                <a href="https://www.instagram.com/unam_mx/" target="_blank" aria-label="Instagram UNAM" style="color: rgb(220,10,49); text-decoration: none; margin-right: 10px;">Instagram</a> <!-- Enlace a la página de Instagram de la UNAM. -->
+                <a href="https://www.youtube.com/user/unam" target="_blank" aria-label="YouTube UNAM" style="color: rgb(220,10,49); text-decoration: none;">YouTube</a> <!-- Enlace a la página de YouTube de la UNAM. -->
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
