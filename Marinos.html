@@ -142,17 +142,18 @@
                     updateModel();
                 </script>
             </section>
+            
             <section id="section3">
                 <!-- Título con estilo agregado -->
                 <h2 style="text-align: center; margin-bottom: 10px;">Animales Terrestres 3D</h2>
                 <div class="container">
                     <div class="buttons-container">
-                        <button id="prevButton" class="button2">Anterior</button>
+                        <button id="prevButton3" class="button2">Anterior</button>
                     </div>
                     <div class="sketch-and-buttons">
-                        <iframe id="sketchfab-embed" allowfullscreen></iframe>
+                        <iframe id="sketchfab-embed3" allowfullscreen></iframe>
                         <div class="buttons-container">
-                            <button id="nextButton" class="button2">Siguiente</button>
+                            <button id="nextButton3" class="button2">Siguiente</button>
                         </div>
                     </div>
                 </div>
@@ -169,7 +170,7 @@
                         gap: 10px; /* Reducir el espacio entre el iframe y los botones */
                     }
             
-                    #sketchfab-embed {
+                    #sketchfab-embed3 {
                         width: 800px; /* Ajusta el ancho del iframe */
                         height: 500px; /* Ajusta la altura del iframe */
                         border: none;
@@ -198,45 +199,45 @@
                 </style>
             
                 <script>
-                    const models = [
+                    const models3 = [
+                    
                     'https://sketchfab.com/models/12785f2a09524606983102e0d446c689/embed'
-                                            ];
-                    let currentModelIndex = 0;
+                    ];
+                    let currentModelIndex3 = 0;
             
-                    const iframe = document.getElementById('sketchfab-embed');
-                    const prevButton = document.getElementById('prevButton');
-                    const nextButton = document.getElementById('nextButton');
+                    const iframe3 = document.getElementById('sketchfab-embed3');
+                    const prevButton3 = document.getElementById('prevButton3');
+                    const nextButton3 = document.getElementById('nextButton3');
             
-                    function updateModel() {
-                        iframe.src = models[currentModelIndex];
+                    function updateModel3() {
+                        iframe3.src = models3[currentModelIndex3];
                     }
             
-                    prevButton.addEventListener('click', () => {
-                        currentModelIndex = (currentModelIndex - 1 + models.length) % models.length;
-                        updateModel();
+                    prevButton3.addEventListener('click', () => {
+                        currentModelIndex3 = (currentModelIndex3 - 1 + models3.length) % models3.length;
+                        updateModel3();
                     });
             
-                    nextButton.addEventListener('click', () => {
-                        currentModelIndex = (currentModelIndex + 1) % models.length;
-                        updateModel();
+                    nextButton3.addEventListener('click', () => {
+                        currentModelIndex3 = (currentModelIndex3 + 1) % models3.length;
+                        updateModel3();
                     });
             
                     // Inicializar con el primer modelo
-                    updateModel();
+                    updateModel3();
                 </script>
             </section>
-             
             <section id="section4">
                 <!-- Título con estilo agregado -->
-                <h2 style="text-align: center; margin-bottom: 10px;">Animales Terrestres 3D</h2>
+                <h2 style="text-align: center; margin-bottom: 10px;">Objetos 3D</h2>
                 <div class="container">
                     <div class="buttons-container">
-                        <button id="prevButton" class="button2">Anterior</button>
+                        <button id="prevButton4" class="button2">Anterior</button>
                     </div>
                     <div class="sketch-and-buttons">
-                        <iframe id="sketchfab-embed" allowfullscreen></iframe>
+                        <iframe id="sketchfab-embed4" allowfullscreen></iframe>
                         <div class="buttons-container">
-                            <button id="nextButton" class="button2">Siguiente</button>
+                            <button id="nextButton4" class="button2">Siguiente</button>
                         </div>
                     </div>
                 </div>
@@ -253,7 +254,7 @@
                         gap: 10px; /* Reducir el espacio entre el iframe y los botones */
                     }
             
-                    #sketchfab-embed {
+                    #sketchfab-embed4 {
                         width: 800px; /* Ajusta el ancho del iframe */
                         height: 500px; /* Ajusta la altura del iframe */
                         border: none;
@@ -282,37 +283,39 @@
                 </style>
             
                 <script>
-                    const models = [
-                    
+                    const models4 = [
+                        
+
                     'https://sketchfab.com/models/42d3f15543c741b9802d213fe6faa1c9/embed',
                     'https://sketchfab.com/models/f75443776b424737870a4a48dd2ab798/embed',
-                    'https://sketchfab.com/models/094afca35584446ba1b3c53cac757743/embed'
-
-                                            ];
-                    let currentModelIndex = 0;
+                    'https://sketchfab.com/models/094afca35584446ba1b3c53cac757743/embed' 
+                    ];
+                    let currentModelIndex4 = 0;
             
-                    const iframe = document.getElementById('sketchfab-embed');
-                    const prevButton = document.getElementById('prevButton');
-                    const nextButton = document.getElementById('nextButton');
+                    const iframe4 = document.getElementById('sketchfab-embed4');
+                    const prevButton4 = document.getElementById('prevButton4');
+                    const nextButton4 = document.getElementById('nextButton4');
             
-                    function updateModel() {
-                        iframe.src = models[currentModelIndex];
+                    function updateModel4() {
+                        iframe4.src = models4[currentModelIndex4];
                     }
             
-                    prevButton.addEventListener('click', () => {
-                        currentModelIndex = (currentModelIndex - 1 + models.length) % models.length;
-                        updateModel();
+                    prevButton4.addEventListener('click', () => {
+                        currentModelIndex4 = (currentModelIndex4 - 1 + models4.length) % models4.length;
+                        updateModel4();
                     });
             
-                    nextButton.addEventListener('click', () => {
-                        currentModelIndex = (currentModelIndex + 1) % models.length;
-                        updateModel();
+                    nextButton4.addEventListener('click', () => {
+                        currentModelIndex4 = (currentModelIndex4 + 1) % models4.length;
+                        updateModel4();
                     });
             
                     // Inicializar con el primer modelo
-                    updateModel();
+                    updateModel4();
                 </script>
             </section>
+            
+            
 
         </div>
     </div>
@@ -333,4 +336,9 @@
 
 </body>
 </html>
+
+
+
+    
+
 
