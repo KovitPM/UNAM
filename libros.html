@@ -3,11 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Libro en Publuu</title>
+    <title>Inicio</title>
+    <link rel="stylesheet" href="Estilos/styles-index.css">
+    <link rel="icon" href="Imagenes/escudo.ico" type="image/x-icon">
+    <style>
+        .ebook-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px; /* Espacio entre los ebooks */
+            margin: 20px auto;
+            flex-wrap: wrap; /* Permite que los ebooks se ajusten en varias líneas si no caben en una sola */
+        }
+
+        .ebook {
+            width: 300px; /* Anchura del rectángulo */
+            height: 180px; /* Altura del rectángulo */
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .ebook iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>Consulta mi Libro</h1>
-    <a href="https://publuu.com/flip-book/759870/1686853/page/1? cover" class="show-publuu-viewer" style="width: auto; height: 240px; position: relative; display: inline-block;"><img src="https://p6aqvvqp5i.execute-api.us-east-2.amazonaws.com/images/cover/759870/1686853" style="height: 100%;"></a><script src="https://cms1.publuu.com/js/embed-viewer.js"></script>
-    <iframe src="URL_DE_TU_LIBRO" width="100%" height="600px" frameborder="0"></iframe>
+    <div class="container">
+        <header class="header">
+            <nav>
+                <div class="navbar-container">
+                    <div class="IMG">
+                        <a href="https://www.ingenieria.unam.mx" target="_blank">
+                          <img src="https://www.ingenieria.unam.mx/nuestra_facultad/images/institucionales/escudo_fi_color.png" 
+                               alt="LogoUNAM" 
+                               style="position: left; left: 0; top: 1%; transform: translateY(-1%); width: 85%; height: auto; filter: drop-shadow(0 0 2px rgba(228, 76, 76, 0.5));">
+                        </a>
+                    </div>
+                    
+                    <input type="checkbox" id="menu-toggle">
+                    <label for="menu-toggle" class="hamburger">&#9776;</label>
+                    <ul class="nav-menu">
+                        <li><a href="Metaversos.html" class="nav-link">Metaversos</a></li>
+                        <li><a href="Modelos3D.html" class="nav-link">Rocas 3D</a></li>
+                        <li><a href="Marinos.html" class="nav-link">Modelos 3D</a></li>
+                        <li><a href="https://ingenieria-unam.netlify.app/" class="nav-link">Recorridos VR</a></li>
+                        <li><a href="https://www.ingenieria.unam.mx/geologia3D/" class="nav-link">Material Geología</a></li>
+                    </ul>
+                    <div class="IMG">
+                        <a href="https://www.unam.mx" target="_blank">
+                          <img src="https://cdn.freelogovectors.net/wp-content/uploads/2020/01/UNAM_Universidad_Nacional_Autonoma_de_Mexico_Logo.png" 
+                               alt="LogoUNAM" 
+                               style="position: left; left: 0; top: 1%; transform: translateY(-1%); width: 105%; height: auto; filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));">
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Ebooks -->
+        <div class="ebook-container">
+            <div class="Ingenieria Petrolera">
+                <iframe src="https://publuu.com/flip-book/776226/1719749/page/1?embed" width="100%" height="380" scrolling="no" frameborder="0" allow="clipboard-write; autoplay; fullscreen" class="publuuflip"></iframe>
+            </div>
+            <div class="Ingenieria Geofisica">
+                <iframe src="https://publuu.com/flip-book/776226/1719748/page/1?embed" width="100%" height="380" scrolling="no" frameborder="0" allow="clipboard-write; autoplay; fullscreen" class="publuuflip"></iframe>
+            </div>
+            <div class="Ingenieria Geologica">
+                <iframe src="https://publuu.com/flip-book/776226/1719747/page/1?embed" width="100%" height="380" scrolling="no" frameborder="0" allow="clipboard-write; autoplay; fullscreen" class="publuuflip"></iframe>
+            </div>
+            <div class="Ingenieria De Minas y Metalurgia">
+                <iframe src="https://publuu.com/flip-book/776226/1719746/page/1?embed" width="100%" height="380" scrolling="no" frameborder="0" allow="clipboard-write; autoplay; fullscreen" class="publuuflip"></iframe>
+            </div>
+           
+        </div>
+
+        <footer class="footer">
+            <p>© 2024 UNAM - Facultad de Ingeniería. Todos los derechos reservados.</p>
+            <div class="social-media" style="margin-top: 10px;">
+                <a href="https://www.facebook.com/UNAM.MX.Oficial/" target="_blank" aria-label="Facebook UNAM" style="color: rgb(220,10,49); text-decoration: none; margin-right: 10px;">Facebook</a>
+                <a href="https://twitter.com/UNAM_MX" target="_blank" aria-label="Twitter UNAM" style="color: rgb(220,10,49); text-decoration: none; margin-right: 10px;">Twitter</a>
+                <a href="https://www.instagram.com/unam_mx/" target="_blank" aria-label="Instagram UNAM" style="color: rgb(220,10,49); text-decoration: none; margin-right: 10px;">Instagram</a>
+                <a href="https://www.youtube.com/user/unam" target="_blank" aria-label="YouTube UNAM" style="color: rgb(220,10,49); text-decoration: none;">YouTube</a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
