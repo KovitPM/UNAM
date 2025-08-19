@@ -126,20 +126,26 @@ iframe {
     }
 
 @keyframes spin {
-    20% { /* 100% dividido por el número de imágenes + 1 */
+    15% { /* 100% dividido por el número de imágenes + 1 */
         transform: translateY(-100%);
       }
-      40% {
+      30% {
         transform: translateY(-200%);
       }
-      60% {
+      45% {
         transform: translateY(-300%);
       }
-      80% {
+      60% {
         transform: translateY(-400%);
       }
-      100% {
+      75% {
         transform: translateY(-500%);
+      }
+      90% {
+        transform: translateY(-600%);
+      }
+      100% {
+        transform: translateY(-700%);
       }
 }
   

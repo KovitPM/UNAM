@@ -22,9 +22,11 @@
             </a>
             <button class="nav-button" data-section="section1">Introducción</button>
             <button class="nav-button" data-section="section2">Geología General</button>
-            <button class="nav-button" data-section="section3">Mineralogía</button>
-            <button class="nav-button" data-section="section4">Petrología</button>
-            <button class="nav-button" data-section="section5">Geología Marina</button>
+            <button class="nav-button" data-section="section3">Ambientes sedimentarios</button>
+            <button class="nav-button" data-section="section4">Formas de relieve terrestre</button>
+            <button class="nav-button" data-section="section5">Mineralogía</button>
+            <button class="nav-button" data-section="section6">Petrología</button>
+            <button class="nav-button" data-section="section7">Geología Marina</button>
             <a href="index.html" style="color: rgb(220,10,49); text-decoration: none; margin-right: 10px;">VOLVER AL INICIO</a>
             
         </div>
@@ -39,6 +41,8 @@
                         <img class="word" src="Imagenes/Virtual3.png" alt="Image 3">
                         <img class="word" src="Imagenes/Virtual4.png" alt="Image 4">
                         <img class="word" src="Imagenes/Virtual5.png" alt="Image 5">
+                        <img class="word" src="Imagenes/Virtual6.png" alt="Image 6">
+                        <img class="word" src="Imagenes/Virtual7.png" alt="Image 7">
                         <img class="word" src="Imagenes/Virtual1.png" alt="Image 1"> 
                     </div>
                 </div>                  
@@ -57,6 +61,7 @@
                 <script src="https://cms1.publuu.com/js/embed-viewer.js"></script>                
             </section>
 
+            
             <section id="section3">
                 <p>Has click en la imagen para iniciar el recorrido</p>
                 <div class="item" id="tour-2">
@@ -64,7 +69,8 @@
                     <div class="play-button"></div>
                 </div>
             </section>
-
+            
+            
             <section id="section4">
                 <p>Has click en la imagen para iniciar el recorrido</p>
                 <div class="item" id="tour-3">
@@ -72,16 +78,34 @@
                     <div class="play-button"></div>
                 </div>
             </section>
-
+            
+            
+            
             <section id="section5">
                 <p>Has click en la imagen para iniciar el recorrido</p>
                 <div class="item" id="tour-4">
                     <img src="Imagenes/Virtual4.png" alt="Recorrido Virtual 1">
                     <div class="play-button"></div>
                 </div>
+            </section>
+
+            <section id="section6">
                 <p>Has click en la imagen para iniciar el recorrido</p>
                 <div class="item" id="tour-5">
                     <img src="Imagenes/Virtual5.png" alt="Recorrido Virtual 1">
+                    <div class="play-button"></div>
+                </div>
+            </section>
+
+            <section id="section7">
+                <p>Has click en la imagen para iniciar el recorrido</p>
+                <div class="item" id="tour-6">
+                    <img src="Imagenes/Virtual6.png" alt="Recorrido Virtual 1">
+                    <div class="play-button"></div>
+                </div>
+                <p>Has click en la imagen para iniciar el recorrido</p>
+                <div class="item" id="tour-7">
+                    <img src="Imagenes/Virtual7.png" alt="Recorrido Virtual 1">
                     <div class="play-button"></div>
                 </div>
             </section>
@@ -134,19 +158,27 @@
         });
 
         document.getElementById('tour-2').addEventListener('click', function() {
-            loadTour('tour-2', 'https://www.spatial.io/s/Museo-66f9f50bc49a36d6cb2cf9f9?share=135306810021644784');
-        });
-
+            loadTour('tour-2', 'https://www.spatial.io/s/ambientes-sedimentarios1s-Metaverso-684dbe3da3ec8e79b053d092?share=1313336218980092970');
+        });        
+        
         document.getElementById('tour-3').addEventListener('click', function() {
-            loadTour('tour-3', 'https://www.spatial.io/s/MUSEO-DE-VOLCALES-Y-MINERALES-671ab26669d6436e7c0c19d3?share=2119413898395286824');
+            loadTour('tour-3', 'https://www.spatial.io/s/formasterrestress-Lo-Fi-Scene-686591bc9864de1814d7ef68?share=3795217538645582729');
         });
-
+        
         document.getElementById('tour-4').addEventListener('click', function() {
-            loadTour('tour-4', 'https://www.spatial.io/s/Tipos-de-Playas-659342f31866c8255e3814f9?share=2125095012973554901');
+            loadTour('tour-4', 'https://www.spatial.io/s/Museo-66f9f50bc49a36d6cb2cf9f9?share=135306810021644784');
         });
 
         document.getElementById('tour-5').addEventListener('click', function() {
-            loadTour('tour-5', 'https://www.spatial.io/s/Guion-de-Campo-Peninsula-de-Baja-California-Sur-66fc4632fc0f430ec9778193?share=6126420002531693144');
+            loadTour('tour-5', 'https://www.spatial.io/s/MUSEO-DE-VOLCALES-Y-MINERALES-671ab26669d6436e7c0c19d3?share=2119413898395286824');
+        });
+
+        document.getElementById('tour-6').addEventListener('click', function() {
+            loadTour('tour-6', 'https://www.spatial.io/s/Tipos-de-Playas-659342f31866c8255e3814f9?share=2125095012973554901');
+        });
+
+        document.getElementById('tour-7').addEventListener('click', function() {
+            loadTour('tour-7', 'https://www.spatial.io/s/Guion-de-Campo-Peninsula-de-Baja-California-Sur-66fc4632fc0f430ec9778193?share=6126420002531693144');
         });
     </script>
 
